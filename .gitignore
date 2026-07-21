@@ -1,0 +1,49 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+.env
+.env.*
+!.env.example
+
+# Security
+*.key
+*.pem
+*.crt
+credentials.json
+secrets.json
+*.id_rsa
+*.id_ed25519
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Java
+target/
+*.class
+
+# Claude Code
+# .claude/ contains project-specific config; settings.local.json is committed
+# as part of gapfill init (permission presets)
+
+# 缓存和测试
+.pytest_cache/
+.mypy_cache/
+*.log
+*.tmp

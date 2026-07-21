@@ -1,0 +1,21 @@
+# 环境信息 - 自动生成，请勿手动修改
+# 生成时间: 2026-07-21T10:57:24.919465+00:00
+
+## 操作系统
+
+- system: Linux
+- release: 6.6.87.2-microsoft-standard-WSL2
+- machine: x86_64
+- python_version: 3.10.12
+
+## 可用工具
+
+- python3: Python 3.10.12
+- node: v20.20.2
+- npm: 10.8.2
+- git: git version 2.34.1
+- mvn: The JAVA_HOME environment variable is not defined correctly,
+- docker: Docker version 29.3.1, build c2be9cc
+- pip: pip 26.1.2 from /home/russell/.local/lib/python3.10/site-packages/pip (python 3.10)
+- pip3: pip 26.1.2 from /home/russell/.local/lib/python3.10/site-packages/pip (python 3.10)
+- gh: gh version 2.78.0 (2025-08-21)
