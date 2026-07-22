@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_assets/
+
+Sitemap: https://ai.stratsapien.com/sitemap.xml

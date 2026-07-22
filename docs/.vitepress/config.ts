@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'AI应用架构',
+  title: 'AI应用架构 · 一士一',
   description: 'AI应用架构开源课程 - 一士一 | AI Agent Architecture, RAG, LLM Applications',
+  titleTemplate: ':title | AI应用架构 · 一士一',
 
   lastUpdated: true,
   cleanUrls: true,
@@ -38,6 +39,8 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://ai.stratsapien.com/' }],
     ['meta', { property: 'og:site_name', content: 'AI应用架构 · 一士一' }],
     ['meta', { property: 'og:image', content: 'https://ai.stratsapien.com/og-image.png' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
 
     // Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -60,7 +63,7 @@ export default defineConfig({
         "provider": {
           "@type": "Person",
           "name": "一士一 (Russell)",
-          "url": "https://github.com/russellglobal"
+          "url": "https://ai.stratsapien.com"
         },
         "url": "https://ai.stratsapien.com",
         "inLanguage": "zh-CN",
