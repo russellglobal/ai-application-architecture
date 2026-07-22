@@ -1,0 +1,24 @@
+{
+  "name": "ai-application-architecture",
+  "version": "1.0.0",
+  "description": "AI应用架构开源课程 - 一士一",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "AI架构",
+    "Agent架构",
+    "RAG",
+    "LLM应用",
+    "架构师课程"
+  ],
+  "author": "一士一 (Russell)",
+  "license": "CC BY-NC-SA 4.0",
+  "devDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.0"
+  }
+}

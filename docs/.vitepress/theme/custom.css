@@ -1,0 +1,382 @@
+/* ========================================
+   AI应用架构 · 一士一 — 品牌视觉系统
+   ======================================== */
+
+:root {
+  /* === Brand Colors === */
+  --vp-c-brand-1: #FF8C42;
+  --vp-c-brand-2: #FFA566;
+  --vp-c-brand-3: #FFB880;
+  --vp-c-brand-soft: rgba(255, 140, 66, 0.14);
+
+  /* === Typography === */
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  /* === Hero Visual === */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #FF8C42 0%, #FFA566 100%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #FF8C42 0%, #FFA566 100%);
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+/* Dark mode */
+.dark {
+  --vp-c-brand-1: #FFA566;
+  --vp-c-brand-2: #FFB880;
+  --vp-c-brand-3: #FFC999;
+  --vp-c-brand-soft: rgba(255, 165, 102, 0.16);
+}
+
+/* ========================================
+   Hero Section — 品牌张力
+   ======================================== */
+
+/* 细网格背景 + 橙光晕 */
+.VPHero {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(255, 140, 66, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 140, 66, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.VPHero::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 140, 66, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero 标题层级张力 */
+.VPHero .name {
+  font-size: 3.25rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.VPHero .text {
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.VPHero .tagline {
+  font-size: 1.125rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1.5rem !important;
+  opacity: 0.85;
+}
+
+.VPHero .actions {
+  margin-bottom: 2rem !important;
+}
+
+/* Features 紧贴 Hero */
+.VPHome .features {
+  margin-top: 0.5rem !important;
+  padding-top: 0.5rem !important;
+}
+
+/* ========================================
+   课程大纲卡片化
+   ======================================== */
+
+.course-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.course-module {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--vp-c-bg-soft);
+}
+
+.course-module:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.1);
+}
+
+.course-module h3 {
+  font-size: 1.1rem !important;
+  margin: 0 0 0.25rem !important;
+  color: var(--vp-c-text-1);
+}
+
+.course-module .module-meta {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 0.75rem;
+}
+
+.course-module .module-desc {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.lecture-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lecture-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 999px;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  text-decoration: none;
+  transition: all 0.15s;
+  background: rgba(34, 197, 94, 0.08);
+}
+
+.lecture-chip:hover {
+  border-color: #16a34a;
+  color: #16a34a;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+/* 进度条 */
+.progress-bar-container {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.progress-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar-track {
+  height: 6px;
+  background: var(--vp-c-divider);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 59%; /* 13/22 */
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+/* ========================================
+   产品卡片按钮化
+   ======================================== */
+
+.product-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--vp-c-brand-1);
+  border: 1.5px solid var(--vp-c-brand-1);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.product-link-btn:hover {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+}
+
+/* ========================================
+   阅读进度条
+   ======================================== */
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  z-index: 100;
+  transition: width 0.1s;
+}
+
+/* ========================================
+   锚点 # — Gutter 法（绝对定位到左侧留白区）
+   ======================================== */
+
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4 {
+  position: relative;
+}
+
+.vp-doc .header-anchor {
+  position: absolute;
+  left: -1.2em;
+  opacity: 0;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  color: var(--vp-c-text-3);
+  font-weight: 400;
+}
+
+.vp-doc h2:hover .header-anchor,
+.vp-doc h3:hover .header-anchor,
+.vp-doc h4:hover .header-anchor {
+  opacity: 0.5;
+}
+
+.vp-doc h2:hover .header-anchor:hover,
+.vp-doc h3:hover .header-anchor:hover,
+.vp-doc h4:hover .header-anchor:hover {
+  opacity: 1;
+}
+
+/* 移动端：缩小 gutter 间距 */
+@media (max-width: 768px) {
+  .vp-doc .header-anchor {
+    left: -0.8em;
+  }
+}
+
+/* ========================================
+   Avatar / 通用图片
+   ======================================== */
+
+.author-avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.VPDoc img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   通用组件
+   ======================================== */
+
+.VPButton.brand {
+  background-color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  color: var(--vp-c-white) !important;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2) !important;
+  border-color: var(--vp-c-brand-2) !important;
+}
+
+.VPLink:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.VPSidebarItem.is-active .text {
+  color: var(--vp-c-brand-1);
+}
+
+.custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+}
+
+.custom-block.warning {
+  border-color: #f59e0b;
+}
+
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+}
+
+.VPFooter a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.VPFooter a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   移动端响应式
+   ======================================== */
+
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2.25rem !important;
+  }
+
+  .VPHero .text {
+    font-size: 1.25rem !important;
+  }
+
+  .VPHero .tagline {
+    font-size: 1rem !important;
+  }
+
+  .VPHero .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .VPHero .actions .VPButton {
+    width: 100%;
+    text-align: center;
+    min-height: 44px;
+  }
+
+  .course-modules {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero .name {
+    font-size: 1.875rem !important;
+  }
+
+  .VPHero .text {
+    font-size: 1.125rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

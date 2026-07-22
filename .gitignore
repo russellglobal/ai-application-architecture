@@ -34,6 +34,14 @@ secrets.json
 node_modules/
 npm-debug.log*
 
+# VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Superpowers (内部设计文档)
+superpowers/
+docs/superpowers/
+
 # Java
 target/
 *.class
