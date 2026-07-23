@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: AI应用架构
+  name: 军尉的《AI应用架构》课
   text: 从架构师视角，系统掌握 AI 应用的设计、开发与运维
   tagline: 22 讲完整知识体系 · 实战经验总结 · 基于真实产品案例
   actions:

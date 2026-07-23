@@ -135,8 +135,8 @@ export default defineConfig({
     },
 
     footer: {
-      message: '<a href="https://ai.stratsapien.com">AI应用架构</a> · <a href="/about">一士一</a> · <a href="https://github.com/russellglobal/ai-application-architecture">GitHub</a>',
-      copyright: 'Copyright © 2024-2026 Russell | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>',
+      message: '<a href="https://ai.stratsapien.com">AI应用架构</a> · <a href="/about">军尉</a> · <a href="https://github.com/russellglobal/ai-application-architecture">GitHub</a>',
+      copyright: 'Copyright © 2024-2026 王军尉 | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>',
     },
 
     search: {

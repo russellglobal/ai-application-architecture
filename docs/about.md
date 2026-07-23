@@ -3,10 +3,10 @@ sidebar: false
 outline: [2, 3]
 ---
 
-# 关于一士一
+# 关于作者
 
 <div class="author-avatar">
-  <img src="./images/avatar.jpg" alt="一士一 / Russell" />
+  <img src="./images/avatar.jpg" alt="王军尉（军尉/一士一/Russell）" />
 </div>
 
 ::: tip 核心定位
