@@ -23,10 +23,10 @@ export default defineConfig({
 
   head: [
     // Favicon
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: '/favicon.svg' }],
 
     // Baidu SEO
-    ['meta', { name: 'baidu-site-verification', content: 'codeval-xxxxxx' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-2ZaMq7OaVV' }],
 
     // Google SEO
     ['meta', { name: 'google-site-verification', content: 'xxxxxx' }],
@@ -80,7 +80,6 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: '一士一',
-    logo: { src: '/yishiyi-calligraphy.png', height: 28 },
 
     nav: [
       { text: '课程', link: '/preface/00-intro-preface' },
