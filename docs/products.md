@@ -1,6 +1,11 @@
 ---
-sidebar: false
-outline: [2, 3]
+title: 产品案例
+description: >-
+  本课程的所有知识点都用以下三个真实产品作为案例，不只讲"做了什么"，更讲"为什么这么做"、"踩过什么坑"、"如果重来会怎么做"。 **按章节编辑
+  Markdown 的 MCP 工具（平均节省 70% Token）**
+keywords: 'AI架构, AI应用架构'
+author: 军尉
+date: '2026-08-15'
 ---
 
 # 产品案例

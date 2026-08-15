@@ -1,3 +1,10 @@
+---
+title: 当 ReAct 不够用：进阶范式与选型决策
+description: "第 03 讲的三种基础范式，推理路径都是线性的——ReAct 是一条链，Plan-and-Execute 是一条带分支的链，Reflexion 是链外面套了个环。\r 但有些任务的解空间不是线性的：\r"
+keywords: 'AI架构, AI应用架构'
+author: 军尉
+date: '2026-08-15'
+---
 # 第 04 讲 | 当 ReAct 不够用：进阶范式与选型决策
 
 > **本节我们将掌握**：

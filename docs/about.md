@@ -1,6 +1,11 @@
 ---
-sidebar: false
-outline: [2, 3]
+title: 关于作者
+description: >-
+  <div class="author-avatar">   <img src="./images/avatar.jpg"
+  alt="王军尉（军尉/一士一/Russell）" />
+keywords: 'AI架构, AI应用架构'
+author: 军尉
+date: '2026-08-15'
 ---
 
 # 关于作者

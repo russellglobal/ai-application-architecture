@@ -1,3 +1,12 @@
+---
+title: 编排与工作流：让 Agent 跑在生产环境里
+description: >-
+  第 03、04 讲讲了各种 Agent 范式。回到生产环境，有一个关键事实： **真正跑稳的 AI 应用，绝大多数是 Workflow，不是
+  Agent。**
+keywords: 'AI架构, AI应用架构'
+author: 军尉
+date: '2026-08-15'
+---
 # 第 05 讲 | 编排与工作流：让 Agent 跑在生产环境里
 
 > **本节我们将掌握**：

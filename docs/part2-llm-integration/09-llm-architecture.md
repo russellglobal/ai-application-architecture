@@ -1,3 +1,12 @@
+---
+title: 模型选型与抽象层
+description: >-
+  和 2024 年"OpenAI 一家独大"不同，2026 年的 LLM 生态已经进入了多极化时代。 **闭源阵营**：GPT-5
+  系列（OpenAI）、Claude Opus 4 系列（Anthropic）、Gemini 3 系列（Goog
+keywords: 'AI架构, AI应用架构'
+author: 军尉
+date: '2026-08-15'
+---
 # 第 09 讲 | 模型选型与抽象层
 
 > **本节我们将掌握**：

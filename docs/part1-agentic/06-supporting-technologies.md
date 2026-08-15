@@ -1,3 +1,13 @@
+---
+title: Agent 的核心支撑技术：MCP、Tool Calling、记忆与缓存
+description: >-
+  没有 MCP 之前，每个客户端 Agent 应用（Claude
+  Code、Codex、Cursor）和每个生产框架（LangGraph、CrewAI）都要自己写连接器连每个工具。N 个应用 × M 个工具 = N×M
+  个连接器。换模型？工具
+keywords: 'AI架构, AI应用架构'
+author: 军尉
+date: '2026-08-15'
+---
 # 第 06 讲 | Agent 的核心支撑技术：MCP、Tool Calling、记忆与缓存
 
 > **本节我们将掌握**：
