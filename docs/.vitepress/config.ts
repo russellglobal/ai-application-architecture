@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image'
+import { generateVerticalPosters } from './scripts/generate-posters.mjs'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   lang: 'zh-CN',
   title: 'AI应用架构 · 一士一',
   description: 'AI应用架构开源课程 - 一士一 | AI Agent Architecture, RAG, LLM Applications',
@@ -19,6 +22,22 @@ export default defineConfig({
         external: [/^\/images\//, /^\/avatar\.jpg$/, /^\/tokslash-screenshot\.jpg$/, /^\/stratsapien-logo\.png$/],
       },
     },
+  },
+
+  buildEnd: async (siteConfig) => {
+    await buildEndGenerateOpenGraphImages({
+      hostname: 'https://ai.stratsapien.com',
+      themeColor: '#FF8C42',
+      fontFamily: 'Noto Sans SC',
+      fontWeight: 700,
+      logo: {
+        light: 'https://ai.stratsapien.com/logo.svg',
+        dark: 'https://ai.stratsapien.com/logo.svg',
+      },
+    })(siteConfig)
+
+    // Generate vertical posters for WeChat sharing
+    await generateVerticalPosters(siteConfig)
   },
 
   head: [
@@ -123,6 +142,20 @@ export default defineConfig({
           { text: '13. 成本与容灾', link: '/part3-ai-ops/13-cost-optimization-disaster-recovery' },
         ]
       },
+      {
+        text: '第四篇：AI Coding',
+        items: [
+          { text: '14. AI 辅助编码与 Vibe Coding', link: '/part4-ai-coding/14-ai-assisted-coding' },
+          { text: '15. 企业级 AI 平台', link: '/part4-ai-coding/15-enterprise-ai-platform' },
+        ]
+      },
+      {
+        text: '深度专题',
+        items: [
+          { text: 'LLM 输出清洗管道', link: '/deep-dive/llm-output-cleaning-tutorial' },
+          { text: 'AI 成本框架', link: '/deep-dive/ai-cost-frameworks' },
+        ]
+      },
     ],
 
     socialLinks: [
@@ -160,4 +193,4 @@ export default defineConfig({
       lang: 'zh-CN',
     },
   },
-})
+}))

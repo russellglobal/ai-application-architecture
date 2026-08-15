@@ -18,7 +18,12 @@
   "author": "一士一 (Russell)",
   "license": "CC BY-NC-SA 4.0",
   "devDependencies": {
+    "@nolebase/vitepress-plugin-og-image": "^2.18.2",
+    "@resvg/resvg-wasm": "^2.6.2",
+    "mermaid": "^11.16.1",
+    "satori": "^0.29.0",
     "vitepress": "^1.5.0",
+    "vitepress-plugin-mermaid": "^2.0.17",
     "vue": "^3.5.0"
   }
 }
