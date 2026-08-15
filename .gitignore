@@ -55,3 +55,4 @@ target/
 .mypy_cache/
 *.log
 *.tmp
+*.Zone.Identifier
