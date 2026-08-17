@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 军尉的《AI应用架构》课
   text: 从架构师视角，系统掌握 AI 应用的设计、开发与运维
-  tagline: 22 讲完整知识体系 · 实战经验总结 · 基于真实产品案例
+  tagline: 17 讲已发布 · 实战经验总结 · 基于真实产品案例
   actions:
     - theme: brand
       text: 开始学习
@@ -78,12 +78,22 @@ features:
   </div>
 </div>
 
-<div class="course-module" style="opacity: 0.6;">
-  <h3>第四~六篇</h3>
-  <div class="module-meta">写作中 · AI Coding · 全栈 · 云</div>
-  <div class="module-desc">AI 辅助编码、Prompt 工程化、后端架构、容器编排、高并发、云原生 SaaS</div>
+<div class="course-module">
+  <h3>第四篇：AI Coding</h3>
+  <div class="module-meta">2 讲 · AI 辅助编码</div>
+  <div class="module-desc">AI 辅助编码与 Vibe Coding、企业级 AI 平台</div>
   <div class="lecture-chips">
-    <span class="lecture-chip" title="AI Coding · 全栈工程 · 云+领导力">14-22 写作中</span>
+    <a class="lecture-chip" href="/part4-ai-coding/14-ai-assisted-coding" title="AI 辅助编码与 Vibe Coding">14</a>
+    <a class="lecture-chip" href="/part4-ai-coding/15-enterprise-ai-platform" title="企业级 AI 平台">15</a>
+  </div>
+</div>
+
+<div class="course-module" style="opacity: 0.6;">
+  <h3>第五~六篇</h3>
+  <div class="module-meta">写作中 · 全栈工程 · 云+领导力</div>
+  <div class="module-desc">后端架构、容器编排、高并发、云原生 SaaS、FinOps</div>
+  <div class="lecture-chips">
+    <span class="lecture-chip" title="全栈工程 · 云+领导力">16-22 写作中</span>
   </div>
 </div>
 
@@ -93,11 +103,11 @@ features:
 
 <div class="progress-bar-container">
   <div class="progress-bar-label">
-    <span>已完成 <strong>13</strong> / 22 讲</span>
+    <span>已完成 <strong>15</strong> / 22 讲</span>
     <span>持续更新中</span>
   </div>
   <div class="progress-bar-track">
-    <div class="progress-bar-fill"></div>
+    <div class="progress-bar-fill" style="width: 68%;"></div>
   </div>
 </div>
 
