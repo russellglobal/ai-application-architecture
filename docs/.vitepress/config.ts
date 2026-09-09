@@ -152,6 +152,7 @@ export default withMermaid(defineConfig({
       {
         text: '深度专题',
         items: [
+          { text: 'AI 原生研发范式', link: '/deep-dive/ai-native-rd-paradigm' },
           { text: 'LLM 输出清洗管道', link: '/deep-dive/llm-output-cleaning-tutorial' },
           { text: 'AI 成本框架', link: '/deep-dive/ai-cost-frameworks' },
         ]
